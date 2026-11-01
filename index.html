@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Bursa Malaysia Screener</title>
+<meta name="description" content="Install the Bursa Malaysia Screener on iPhone or Mac and open it.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-title" content="Bursa Screener">
+<meta name="theme-color" content="#00042f">
+<script>
+  // Opened from the Home Screen or Dock icon: go straight to the screener.
+  var SCREENER = "https://claude.ai/artifact/XCPh3J6wVCBbWkJhs126dQ";
+  if (/[?&]launch=1/.test(location.search)) location.replace(SCREENER);
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,600..800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#00042f; --navy-2:#0b1450; --ink:#eef1ff; --muted:#a9b0d6; --line:#26306b;
+  --red:#d40000; --green:#4ce000;
+  --f-display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --f-body:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--navy);color:var(--ink);font:16px/1.55 var(--f-body);
+  padding:env(safe-area-inset-top,0px) max(16px,env(safe-area-inset-right,0px)) env(safe-area-inset-bottom,0px) max(16px,env(safe-area-inset-left,0px))}
+main{max-width:720px;margin:0 auto;padding-block:40px 56px;display:grid;gap:28px}
+.hero{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center}
+.hero img{width:104px;height:104px;border-radius:24px;box-shadow:0 8px 30px rgba(0,0,0,.45)}
+h1{font-family:var(--f-display);font-stretch:80%;font-weight:800;font-size:clamp(1.8rem,6vw,2.6rem);line-height:1.05;margin:0;text-wrap:balance}
+.sub{color:var(--muted);margin:6px 0 0}
+.open{display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;border-radius:14px;background:var(--red);color:#fff;text-decoration:none;font-family:var(--f-display);font-weight:700;font-stretch:90%;font-size:1.15rem}
+.open:hover{filter:brightness(1.1)}
+.open svg{width:20px;height:20px}
+.card{background:var(--navy-2);border:1px solid var(--line);border-radius:16px;padding:20px;display:grid;gap:12px}
+.card.here{border-color:var(--green)}
+.card h2{font-family:var(--f-display);font-weight:700;font-stretch:90%;font-size:1.3rem;margin:0;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.tag{font-family:var(--f-body);font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--navy);background:var(--green);border-radius:999px;padding:2px 8px}
+.card ol{margin:0;padding-left:22px;display:grid;gap:6px}
+.card p{margin:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;border-radius:12px;border:1px solid var(--line);background:var(--navy);color:var(--ink);text-decoration:none;font-weight:700;justify-self:start}
+.btn:hover{border-color:var(--green)}
+.note{color:var(--muted);font-size:.9rem}
+b{font-weight:700}
+a:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding-top:16px}
+@media (max-width:420px){.hero{grid-template-columns:1fr}.hero img{width:88px;height:88px}}
+</style>
+</head>
+<body>
+<main>
+  <div class="hero">
+    <img src="apple-touch-icon.png" alt="Bursa Malaysia Screener icon" width="104" height="104">
+    <div>
+      <h1>Bursa Malaysia Screener</h1>
+      <p class="sub">Composite scores, Momentum, Buffett and Rule #1 screens for Main and ACE Market stocks.</p>
+    </div>
+  </div>
+
+  <a class="open" id="openLink" href="https://claude.ai/artifact/XCPh3J6wVCBbWkJhs126dQ">Open the screener
+    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 4h9v9M16 4 5 15"/></svg></a>
+
+  <section class="card" id="iphone">
+    <h2>iPhone <span class="tag" hidden>This device</span></h2>
+    <p><b>Option 1, install the icon (open this page in Safari):</b></p>
+    <ol>
+      <li>Tap <b>Download for iPhone</b> below, then <b>Allow</b>.</li>
+      <li>Open <b>Settings</b>, tap <b>Profile Downloaded</b>, then <b>Install</b>.</li>
+    </ol>
+    <a class="btn" href="Bursa-Screener.mobileconfig">Download for iPhone</a>
+    <p><b>Option 2, add from Safari:</b> tap the Share button on this page, then <b>Add to Home Screen</b>. The icon opens the screener directly.</p>
+    <p class="note">iOS shows the profile as "Not Verified" because it isn't signed by a company. It contains only the Home Screen icon and link. Remove it any time in Settings → General → VPN &amp; Device Management.</p>
+  </section>
+
+  <section class="card" id="mac">
+    <h2>Mac <span class="tag" hidden>This device</span></h2>
+    <ol>
+      <li>Download the app below and double-click the zip to unzip it.</li>
+      <li>Drag <b>Bursa Screener</b> into your <b>Applications</b> folder.</li>
+      <li>The first time, right-click it and choose <b>Open</b>, then <b>Open</b> again. If macOS still refuses, go to System Settings → Privacy &amp; Security → <b>Open Anyway</b>.</li>
+      <li>Drag it from Applications onto the Dock.</li>
+    </ol>
+    <a class="btn" href="Bursa-Screener-Mac.zip">Download for Mac</a>
+    <p class="note">macOS asks because the app isn't from the App Store. It only opens the screener in your browser.</p>
+  </section>
+
+  <section class="card" id="windows">
+    <h2>Windows <span class="tag" hidden>This device</span></h2>
+    <p>Open the screener in Chrome or Edge, then use the browser menu: <b>Cast, save and share → Install page as app</b> (Chrome) or <b>Apps → Install this site as an app</b> (Edge).</p>
+  </section>
+
+  <footer>
+    The screener is private, so sign in to Claude when it opens. Mechanical screen on published figures, not financial advice.
+  </footer>
+</main>
+<script>
+  (function(){
+    var ua = navigator.userAgent, touchMac = /Macintosh/.test(ua) && navigator.maxTouchPoints > 1;
+    var id = /iPhone|iPad|iPod/.test(ua) || touchMac ? "iphone" : /Macintosh/.test(ua) ? "mac" : /Windows/.test(ua) ? "windows" : null;
+    if (!id) return;
+    var card = document.getElementById(id);
+    card.classList.add("here"); card.querySelector(".tag").hidden = false;
+    card.parentNode.insertBefore(card, document.querySelector(".card"));
+  })();
+</script>
+</body>
+</html>
